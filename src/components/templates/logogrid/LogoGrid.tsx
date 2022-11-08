@@ -7,7 +7,7 @@ const LogoGrid = () => (
     <Container py={{ base: '12', md: '16' }}>
       <Stack spacing="8">
         <Text fontSize={{ base: 'md', md: 'lg' }} fontWeight="bold" textAlign="center">
-          These and other companies trust us
+          We support the following projects:
         </Text>
         <SimpleGrid gap={{ base: '4', md: '8' }} columns={{ base: 2, md: 3, lg: 5 }}>
           {Object.entries(logos).map(([name, Logo]) => (

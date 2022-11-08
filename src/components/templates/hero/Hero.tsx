@@ -37,26 +37,26 @@ import {
         >
           <Box flex="1" maxW={{ lg: '520px' }}>
             <Text
-              size="xs"
+              size="lg"
               textTransform="uppercase"
               fontWeight="semibold"
               color={mode('blue.600', 'blue.300')}
               letterSpacing="wide"
             >
-              enDAPP- Be Entertained and Earn
+              We Were Never Alone
             </Text>
             <Heading
               as="h1"
-              size="3xl"
+              size="md"
               color={mode('blue.600', 'blue.300')}
               mt="8"
               fontWeight="extrabold"
               letterSpacing="tight"
             >
-              Games, Animated Shows, Comics and NFTs, all in one Dapp
+              SKY GODZ is an anime-style, scifi project with a decentralized NFT RPG game, an anime and a webtoon. 
             </Heading>
-            <Text color={mode('gray.600', 'gray.400')} mt="4" fontSize="lg" fontWeight="medium">
-           enDapp is an app that includes games, cartoons, video and webtoons all in one blockchain-powered app. Every event, decision or action will be tokenized to create a fully immersive experience where the audience creates their own metaverse. 
+            <Text color={mode('gray.600', 'gray.400')} mt="4" fontSize="xl" fontWeight="medium">
+            The game is using cutting edge blockchain technology in combination with a story-driven, turn-based, multi-player RPG Metaverse, elements of DeFi and visual novels.
             </Text>
             <Stack direction={{ base: 'column', md: 'row' }} spacing="4" mt="8">
               <Button size="lg" minW="210px" colorScheme="blue" height="14" px="8">
@@ -90,7 +90,7 @@ import {
               zIndex="1"
               h={{ lg: '100%' }}
               objectFit="cover"
-              src="https://www.virtual-graphics.ch/wp-content/uploads/2022/10/edDAPP_imageMAIN.jpg"
+              src="https://www.virtual-graphics.ch/wp-content/uploads/2022/11/skygodz_imageMAIN.jpg"
               alt="Screening talent"
             />
             <Box

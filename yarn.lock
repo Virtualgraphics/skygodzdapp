@@ -6977,6 +6977,7 @@ __metadata:
     keen-slider: ^6.8.3
     next: 12.3.1
     react: 18.2.0
+    react-app-polyfill: ^3.0.0
     react-comic-viewer: ^0.4.0
     react-dom: 18.2.0
     react-icons: ^4.6.0

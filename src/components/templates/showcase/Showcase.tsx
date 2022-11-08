@@ -22,7 +22,7 @@ const Showcase = () => (
         objectPosition="top center"
         title="COOL GAMES"
         description="Check out our fun games and earn tokens!"
-        src="https://www.virtual-graphics.ch/wp-content/uploads/2022/10/show640.jpg"
+        src="https://www.virtual-graphics.ch/wp-content/uploads/2022/11/sg_show640.jpg"
         alt="Lovely Image"
       />
       <Stack spacing={{ base: '6', md: '10' }} maxW={{ md: '400px' }}>
@@ -35,7 +35,7 @@ const Showcase = () => (
         <ImageWithOverlay
           spacing="4"
           title="ANIME"
-          src="https://www.virtual-graphics.ch/wp-content/uploads/2022/10/show400_01.jpg"
+          src="https://www.virtual-graphics.ch/wp-content/uploads/2022/11/sg_show400.jpg"
           alt="Lovely Image"
         />
       </Stack>
