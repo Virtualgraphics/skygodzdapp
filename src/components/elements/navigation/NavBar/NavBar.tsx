@@ -4,7 +4,7 @@ import NAV_LINKS from './paths';
 
 const NavBar = () => {
   return (
-    <HStack gap={'15px'}>
+    <HStack gap={'15px'} >
       {NAV_LINKS.map((link) => (
         <NavItem key={`link-${link.label}`} {...link} />
       ))}

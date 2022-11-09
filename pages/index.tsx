@@ -10,7 +10,7 @@ const HomePage: NextPage = () => {
   return (
   
     
-    <Default pageName="Home">
+    <Default pageName="SKY GODZ-We Were Never Alone">
     <Home />
     </Default>
   

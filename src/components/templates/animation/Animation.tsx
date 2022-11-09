@@ -3,6 +3,7 @@ import { Container, Stack, Box, Text, Center, Flex, AspectRatio, Wrap, Heading, 
 import { ContentGrid } from 'components/templates/contentgrid';
 import { Vote } from 'components/templates/vote';
 import { CheckBox } from 'components/templates/checkbox';
+import ReactPlayer from 'react-player';
 
 const Animation = () => {
 
@@ -28,8 +29,8 @@ align="center"
 as='video'
 controls
 
-src=''
-poster='https://www.virtual-graphics.ch/wp-content/uploads/2022/11/km_thumb720.jpg'
+src='https://www.dropbox.com/s/c8r9cinrlnrunyl/skygodz_teaser_2022.mp4?dl=0'
+poster='https://www.virtual-graphics.ch/wp-content/uploads/2022/11/teaser_thumb.jpg'
 
 objectFit='contain'
 sx={{

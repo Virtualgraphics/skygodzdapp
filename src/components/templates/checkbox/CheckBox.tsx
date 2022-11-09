@@ -12,7 +12,7 @@ const CheckBox = () => (
               Option {option}
             </Text>
             <Text color="muted" fontSize="md">
-              Jelly biscuit muffin icing dessert powder macaroon.
+              Episode 0: Will Enki finds our about Sargons eveil Play. 100 Lotus Token.
             </Text>
           </CheckboxCard>
         ))}

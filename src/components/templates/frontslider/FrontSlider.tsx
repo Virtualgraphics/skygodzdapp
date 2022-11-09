@@ -14,10 +14,12 @@ const settings = {
   infinite: true,
   autoplay: true,
   speed: 500,
-  autoplaySpeed: 5000,
+  autoplaySpeed: 3000,
   slidesToShow: 1,
   slidesToScroll: 1,
   adaptiveHeight: true,
+  swipe: true
+  
 
 };
 
@@ -58,32 +60,10 @@ function Carousel() {
         type="text/css"
         href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"
       />
-      {/* Left Icon */}
-      <IconButton
-        aria-label="left-arrow"
-        colorScheme="messenger"
-        borderRadius="full"
-        position="absolute"
-        left={side}
-        top={top}
-        transform={'translate(0%, -50%)'}
-        zIndex={2}
-        onClick={() => slider?.slickPrev()}>
-        <BiLeftArrowAlt />
-      </IconButton>
-      {/* Right Icon */}
-      <IconButton
-        aria-label="right-arrow"
-        colorScheme="messenger"
-        borderRadius="full"
-        position="absolute"
-        right={side}
-        top={top}
-        transform={'translate(0%, -50%)'}
-        zIndex={2}
-        onClick={() => slider?.slickNext()}>
-        <BiRightArrowAlt />
-      </IconButton>
+      
+
+      
+      
       {/* Slider */}
       <Slider {...settings} ref={(slider) => setSlider(slider)}>
         {cards.map((url, index) => (

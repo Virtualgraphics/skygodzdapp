@@ -6,9 +6,9 @@ const SkyGodzLogo = () => {
 
   return (
     <Image
-      src={colorMode === 'dark' ? './skygodzLogoDark.svg' : './skygodzLogoLight.svg'}
-      height={45}
-      width={150}
+      src={colorMode === 'dark' ? 'https://www.virtual-graphics.ch/wp-content/uploads/2022/11/skygodzLogoDARK.svg' : 'https://www.virtual-graphics.ch/wp-content/uploads/2022/11/skygodzlogoLIGHT.svg'}
+      height={55}
+      width={220}
       alt="Sky Godz"
     />
   );

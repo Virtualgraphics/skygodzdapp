@@ -6,7 +6,7 @@ import {EndappLogo } from 'components/elements';
 const Footer = () => {
 
 return (
-  <Box w="100%" bg="bg-accent" color="on-accent">
+  <Box w="100%" bgGradient="linear(to-b, #00031d, #000a65)">
     <Container w="100%" as="footer" role="contentinfo" py={{ base: '12', md: '16' }}>
       <Stack spacing={{ base: '4', md: '5' }}>
         <Stack align="center">
