@@ -4,7 +4,7 @@ import type { NextPage } from 'next';
 
 const COMMUNITY: NextPage = () => {
   return (
-    <Default pageName="Community">
+    <Default pageName="COMMUNITY">
       <Community />
     </Default>
   );

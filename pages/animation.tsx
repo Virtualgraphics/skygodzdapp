@@ -4,7 +4,7 @@ import type { NextPage } from 'next';
 
 const ANIMATION: NextPage = () => {
   return (
-    <Default pageName="Animation">
+    <Default pageName="ANIMATION">
       <Animation />
     </Default>
   );

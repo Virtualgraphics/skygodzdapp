@@ -1,5 +1,5 @@
 import { FC, useEffect } from 'react';
-import { Container, Stack, Box, Text, Flex, Heading, Icon, useColorModeValue as mode } from '@chakra-ui/react';
+import { Container, Stack, Box, Text, Flex, Image, Heading, Icon, useColorModeValue as mode } from '@chakra-ui/react';
 
 import { StrictMode } from "react";
 import ReactDOM from "react-dom";
@@ -20,12 +20,20 @@ const Games = () => {
             size="md"
             color={mode('blue.600', 'blue.300')}
             mt="0"
-            mb="10"
+            mb="0"
             fontWeight="extrabold"
             letterSpacing="tight" >
            Enjoy the Games and earn tokens
           </Heading>
         </Stack>
+
+        </Flex>  
+        
+        <Flex 
+
+        align="center" justify="center" mt="10" mb="20">
+
+        <Image src='https://www.virtual-graphics.ch/wp-content/uploads/2022/11/game_cover.png'  alt= "Game Cover"/>
 
         </Flex>
 

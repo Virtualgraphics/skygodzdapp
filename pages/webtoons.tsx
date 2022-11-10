@@ -4,7 +4,7 @@ import type { NextPage } from 'next';
 
 const WEBTOONS: NextPage = () => {
   return (
-    <Default pageName="Animation">
+    <Default pageName="WEBTOONS">
       <Webtoons />
     </Default>
   );

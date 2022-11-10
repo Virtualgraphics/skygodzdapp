@@ -29,7 +29,7 @@ const Feature = ({ heading, text }: FeatureProps) => {
 
 function gridListWithCTA() {
   return (
-    <Box as={Container} maxW="5xl" mt={14} p={4}>
+    <Box as={Container} maxW="5xl" mt={-10} mb={40} p={4}>
       <Grid
         templateColumns={{
           base: 'repeat(1, 1fr)',
@@ -42,8 +42,8 @@ function gridListWithCTA() {
             <chakra.h2 fontSize="3xl" fontWeight="700">
               Medium length title
             </chakra.h2>
-            <Button colorScheme="green" size="md">
-              Call To Action
+            <Button colorScheme="blue" size="md">
+              Launch Game
             </Button>
           </VStack>
         </GridItem>

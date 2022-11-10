@@ -4,7 +4,7 @@ import type { NextPage } from 'next';
 
 const MARKETPLACE: NextPage = () => {
   return (
-    <Default pageName="Marketplace">
+    <Default pageName="MARKETPLACE">
       <Marketplace />
     </Default>
   );
