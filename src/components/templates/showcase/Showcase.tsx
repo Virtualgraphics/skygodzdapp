@@ -21,7 +21,7 @@ const Showcase = () => (
         flex="1"
         objectPosition="top center"
         title="COOL GAMES"
-        description="Check out our fun games and earn tokens!"
+        description=""
         src="https://www.virtual-graphics.ch/wp-content/uploads/2022/11/sg_show640.jpg"
         alt="Lovely Image"
       />

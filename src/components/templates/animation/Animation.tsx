@@ -29,7 +29,7 @@ align="center"
 as='video'
 controls
 
-src='https://www.dropbox.com/s/c8r9cinrlnrunyl/skygodz_teaser_2022.mp4?dl=0'
+src='https://www.skygodz.com/images/skygodz_teaser_2022.mp4'
 poster='https://www.virtual-graphics.ch/wp-content/uploads/2022/11/teaser_thumb.jpg'
 
 objectFit='contain'

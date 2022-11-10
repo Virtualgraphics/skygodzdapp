@@ -33,17 +33,19 @@ function Carousel() {
 
   // These are the images used in the slide
   const cards = [
+    './img/0.jpg',
     './img/1.jpg',
     './img/2.jpg',
     './img/3.jpg',
     './img/4.jpg',
+    './img/5.jpg',
   ];
 
   return (
     <Box
-    maxW="70%" marginTop={0} marginBottom ={10}
+    maxW="60%" marginTop={0} marginBottom ={5}
       position={'relative'}
-      height={'800px'}
+      height={'700px'}
       width={'full'}
       overflow={'hidden'}>
       {/* CSS files for react-slick */}
@@ -88,8 +90,9 @@ function Carousel() {
       <Slider {...settings} ref={(slider) => setSlider(slider)}>
         {cards.map((url, index) => (
           <Box
+          borderRadius='2xl'
             key={index}
-            height={'3xl'}
+            height={'2xl'}
             position="relative"
             backgroundPosition="center"
             backgroundRepeat="no-repeat"

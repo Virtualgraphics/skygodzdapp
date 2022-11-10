@@ -53,11 +53,11 @@ import {
         >
           <Stack spacing={spacing}>
             <Stack spacing="4">
-              <Heading size="md" color="white">
+              <Heading size="sm" color="white">
                 {title}
               </Heading>
               {description && (
-                <Text fontSize="lg" color="white" maxW="2xs">
+                <Text fontSize="md" color="white" maxW="2xs">
                   {description}
                 </Text>
               )}</Stack>

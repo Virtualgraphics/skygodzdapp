@@ -43,7 +43,7 @@ const NFTMint= () => {
         <Stack spacing="6" align="center">
          
           <Stack spacing="3" textAlign="center">
-            <Image borderRadius="20" src="https://www.virtual-graphics.ch/wp-content/uploads/2022/10/collection.jpg" alt="Varan"/>
+            <Image borderRadius="20" src="https://www.virtual-graphics.ch/wp-content/uploads/2022/11/mint_arcturian.jpg" alt="Arcturian"/>
            
           </Stack>
         </Stack>

@@ -8,7 +8,8 @@ import { StrictMode } from "react";
 import ReactDOM from "react-dom";
 import { useRef } from "react";
 import { Carousel } from '../carousel';
-import { Vote } from '../vote';
+import { ContentGrid01 } from '../contentgrid01';
+
 
 
 
@@ -52,7 +53,7 @@ const Webtoons = () => {
 </Stack>
 
 <Stack  alignItems='baseline' justify="center"> 
-  <ContentGrid/>
+  <ContentGrid01/>
 
 
 </Stack>
