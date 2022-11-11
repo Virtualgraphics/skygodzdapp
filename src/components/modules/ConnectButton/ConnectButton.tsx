@@ -1,12 +1,12 @@
 
-import { Button, Text, HStack, Avatar, useToast } from '@chakra-ui/react';
+
+import { ConnectWallet } from '@thirdweb-dev/react'
 
 
 const ConnectButton = () => {
+
   return (
-    <Button size="sm" colorScheme="blue">
-      Connect Wallet
-    </Button>
+    <ConnectWallet  colorMode="light" accentColor='lightblue'/>
   );
 };
 
