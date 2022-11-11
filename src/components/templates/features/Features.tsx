@@ -13,18 +13,17 @@ import {
   import { features } from './data'
   
   const Features = () => (
-    <Box maxW="100%" as="section" >
-      <Container  py={{ base: '16', md: '24' }}>
+    <Box maxW="100%" as="section" mb='20'>
+      <Container  py={{ base: '16', md: '14' }}>
         <Stack spacing={{ base: '12', md: '16' }}>
-          <Stack spacing={{ base: '4', md: '5' }} align="center" textAlign="center">
+          <Stack spacing={{ base: '4', md: '15' }} align="center" textAlign="center">
             <Stack spacing="3">
               <Heading size={useBreakpointValue({ base: 'sm', xl: 'xl' })}>
                 Social Media for Web3
               </Heading>
             </Stack>
-            <Text color="muted" fontSize={{ base: 'lg', md: 'xl' }} maxW="3xl">
-              A bundle of 210+ ready-to-use, responsive and accessible components with clever
-              structured sourcode files.
+            <Text color="blue.400" fontSize={{ base: '2xl', md: '2xl' }} maxW="3xl">
+              Created with Lens Protocol and Moralis
             </Text>
           </Stack>
           <SimpleGrid columns={{ base: 1, md: 2, lg: 3 }} columnGap={8} rowGap={{ base: 10, md: 16 }}>

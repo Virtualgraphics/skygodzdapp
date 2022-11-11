@@ -23,15 +23,15 @@ import { FrontSlider } from '../frontslider';
               size="md"
               color={mode('blue.600', 'blue.300')}
               mt="0"
-              fontWeight="extrabold"
+              fontWeight="bold"
               letterSpacing="tight"
             >
-              CHECK OUT OUR PROJECTS BELOW:
+              Experience the Power of the Universe and discover Endless Possibilites:
             </Heading>
   </Flex>
 
       <Showcase />
-      <LogoGrid />
+     
       
       </Box>
      </div> 

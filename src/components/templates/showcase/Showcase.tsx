@@ -19,7 +19,7 @@ const Showcase = () => (
     >
      <ImageWithOverlay
         flex="1"
-        objectPosition="top center"
+        objectPosition="center center"
         title="COOL GAMES"
         description=""
         src="https://www.virtual-graphics.ch/wp-content/uploads/2022/11/sg_show640.jpg"

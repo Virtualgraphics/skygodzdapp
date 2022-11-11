@@ -8,6 +8,7 @@ import {
   Grid,
   GridItem,
   Container,
+
 } from '@chakra-ui/react';
 import {} from '@chakra-ui/react';
 
@@ -39,8 +40,8 @@ function gridListWithCTA() {
         gap={4}>
         <GridItem colSpan={1}>
           <VStack alignItems="flex-start" spacing="20px">
-            <chakra.h2 fontSize="3xl" fontWeight="700">
-              Medium length title
+            <chakra.h2 fontSize="3xl" fontWeight="700" color="blue.400">
+               Choose your planet, connect your NFT and launch the Game...
             </chakra.h2>
             <Button colorScheme="blue" size="md">
               Launch Game
@@ -49,11 +50,10 @@ function gridListWithCTA() {
         </GridItem>
         <GridItem>
           <Flex>
-            <chakra.p>
-              Provide your customers a story they would enjoy keeping in mind
-              the objectives of your website. Pay special attention to the tone
-              of voice.
-            </chakra.p>
+            <chakra.h2 fontSize="2xl" fontWeight="500">
+            Go on Quests across the Universe, become a member of the Galactic Federation and earn valubale items and powers in this turn-based ascension RPG with NFT and DeFi 
+elements. 
+              </chakra.h2>
           </Flex>
         </GridItem>
       </Grid>
@@ -66,20 +66,20 @@ function gridListWithCTA() {
         }}
         gap={{ base: '8', sm: '12', md: '16' }}>
         <Feature
-          heading={'First Feature'}
-          text={'Short text describing one of you features/service'}
+          heading={'Step 1'}
+          text={'Mint a custom Alien NFT of your choosing or pick a free NFT'}
         />
         <Feature
-          heading={'Second Feature'}
-          text={'Short text describing one of you features/service'}
+          heading={'Step 2'}
+          text={'Launch the Game and connect your Wallet'}
         />
         <Feature
-          heading={'Third Feature'}
-          text={'Short text describing one of you features/service'}
+          heading={'Step 3'}
+          text={'Choose the planet that matches the Starsystem of your Alien NFT - You can later travel to other Starsystems'}
         />
         <Feature
-          heading={'Fourth Feature'}
-          text={'Short text describing one of you features/service'}
+          heading={'Step 4'}
+          text={'Claim or mint additional LOTUS Tooken and Items by travelling through the Stargates'}
         />
       </Grid>
     </Box>
