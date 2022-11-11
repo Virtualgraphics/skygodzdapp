@@ -3152,7 +3152,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@ethersproject/abi@npm:5.7.0, @ethersproject/abi@npm:^5.7.0":
+"@ethersproject/abi@npm:5.7.0, @ethersproject/abi@npm:^5.6.3, @ethersproject/abi@npm:^5.7.0":
   version: 5.7.0
   resolution: "@ethersproject/abi@npm:5.7.0"
   dependencies:
@@ -3197,7 +3197,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@ethersproject/address@npm:5.7.0, @ethersproject/address@npm:^5.7.0":
+"@ethersproject/address@npm:5.7.0, @ethersproject/address@npm:^5.6.0, @ethersproject/address@npm:^5.7.0":
   version: 5.7.0
   resolution: "@ethersproject/address@npm:5.7.0"
   dependencies:
@@ -3477,7 +3477,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@ethersproject/transactions@npm:5.7.0, @ethersproject/transactions@npm:^5.0.0-beta.135, @ethersproject/transactions@npm:^5.6.2, @ethersproject/transactions@npm:^5.7.0":
+"@ethersproject/transactions@npm:5.7.0, @ethersproject/transactions@npm:^5.0.0-beta.135, @ethersproject/transactions@npm:^5.6.0, @ethersproject/transactions@npm:^5.6.2, @ethersproject/transactions@npm:^5.7.0":
   version: 5.7.0
   resolution: "@ethersproject/transactions@npm:5.7.0"
   dependencies:
@@ -4262,6 +4262,103 @@ __metadata:
     bn.js: ^5.2.0
     debug: ^4.3.3
   checksum: 96270e370e8e9bd5d3a04e5debffbd32252942350c5653d2551136ee311c7b2ba860dfd2c95c901b9859c0deb83d2a7f229f75f335cc6d6754e7e8e8b00d17e7
+  languageName: node
+  linkType: hard
+
+"@moralisweb3/api-utils@npm:^2.7.2":
+  version: 2.7.2
+  resolution: "@moralisweb3/api-utils@npm:2.7.2"
+  dependencies:
+    "@moralisweb3/core": ^2.7.2
+  checksum: eb4b37da2305fc65c6f579887d99535f451d112676f6bea4c8bb83d45fe4cca482b4d5e5b3ea95c2d34d405d11a844243acf67578151139ae270255da55341c8
+  languageName: node
+  linkType: hard
+
+"@moralisweb3/auth@npm:^2.7.2":
+  version: 2.7.2
+  resolution: "@moralisweb3/auth@npm:2.7.2"
+  dependencies:
+    "@moralisweb3/api-utils": ^2.7.2
+    "@moralisweb3/core": ^2.7.2
+    "@moralisweb3/evm-utils": ^2.7.2
+    "@moralisweb3/sol-utils": ^2.7.2
+  checksum: eca881334f86c43c3fbfcd4267948f9bef4e9d12d82166bf2ca60c717e8ce54eb231ba950770788a478009b1c3288d7917d04b7c06c3fa2a61fa17d8cac06b0b
+  languageName: node
+  linkType: hard
+
+"@moralisweb3/core@npm:^2.7.2":
+  version: 2.7.2
+  resolution: "@moralisweb3/core@npm:2.7.2"
+  dependencies:
+    axios: ^0.27.2
+    eventemitter3: ^4.0.7
+    typed-emitter: ^2.1.0
+  checksum: cf4b4f5815cbf21eab0754a42132a2e681482f1e5a7b998bb4ac260c131a29851a9a7249ed6ac04a4bdd6e872c4eecb805608d72f11b1f65110c61152a583283
+  languageName: node
+  linkType: hard
+
+"@moralisweb3/evm-api@npm:^2.7.2":
+  version: 2.7.2
+  resolution: "@moralisweb3/evm-api@npm:2.7.2"
+  dependencies:
+    "@moralisweb3/api-utils": ^2.7.2
+    "@moralisweb3/core": ^2.7.2
+    "@moralisweb3/evm-utils": ^2.7.2
+  checksum: b1f64a0cfe6b633a7a325f90866336cfd3b81fc0cc3dc5431cbc3968aaf1e96fa647d7c45a22a1f25f09a3acc27af920973df5a1c3b73bdc16b348c2cb33c748
+  languageName: node
+  linkType: hard
+
+"@moralisweb3/evm-utils@npm:^2.7.2":
+  version: 2.7.2
+  resolution: "@moralisweb3/evm-utils@npm:2.7.2"
+  dependencies:
+    "@ethersproject/address": ^5.6.0
+    "@ethersproject/transactions": ^5.6.0
+    "@moralisweb3/core": ^2.7.2
+  checksum: e08f86cdc1ba4f355adca73c4b39f2ccf18cba7e7b0e54015f506843f7abce78142b166b829c4dded5ff14d0124d26c1604f23b87b82b01a0e1b8904619bcbe7
+  languageName: node
+  linkType: hard
+
+"@moralisweb3/sol-api@npm:^2.7.2":
+  version: 2.7.2
+  resolution: "@moralisweb3/sol-api@npm:2.7.2"
+  dependencies:
+    "@moralisweb3/api-utils": ^2.7.2
+    "@moralisweb3/core": ^2.7.2
+    "@moralisweb3/sol-utils": ^2.7.2
+  checksum: 8b1d57a846485fedd76e045b4f8d11d700878caf73d82d0eb0d84e07db9b577c84a1c945a4217cb0c60740fbc82fa43718a547cfe78c868879d6ad52680ead9e
+  languageName: node
+  linkType: hard
+
+"@moralisweb3/sol-utils@npm:^2.7.2":
+  version: 2.7.2
+  resolution: "@moralisweb3/sol-utils@npm:2.7.2"
+  dependencies:
+    "@moralisweb3/core": ^2.7.2
+    "@solana/web3.js": ^1.56.2
+  checksum: e4503baef19de2f9946778f310be524f2ad3a59ade4885b133ba3a21c59d2ddf56e347f6950c0e651fb9fc5969867aa9f6a040581780de5d55025a98bf28ed17
+  languageName: node
+  linkType: hard
+
+"@moralisweb3/streams-typings@npm:^1.0.5":
+  version: 1.0.5
+  resolution: "@moralisweb3/streams-typings@npm:1.0.5"
+  checksum: 119c67bac5a71c6f7645b1bc01da9fd18a1bad218fd2623eb88d9f87f6d48ca7a6210c9b42b873256847fd337c0f16966dde8c2f4a6c5ab8d26b48a9e121fd92
+  languageName: node
+  linkType: hard
+
+"@moralisweb3/streams@npm:^2.7.2":
+  version: 2.7.2
+  resolution: "@moralisweb3/streams@npm:2.7.2"
+  dependencies:
+    "@moralisweb3/api-utils": ^2.7.2
+    "@moralisweb3/core": ^2.7.2
+    "@moralisweb3/evm-utils": ^2.7.2
+    "@moralisweb3/streams-typings": ^1.0.5
+    ethereumjs-util: ^7.1.0
+    ethers: ^5.7.1
+    web3-eth-abi: ^1.8.0
+  checksum: 5777f2ada9ba02bfcec58b53922784ae65803b4ee3fbdb0a911902f07bac781de2cc02886e2abf2297f82d5544572df12bc8db3a71de7594b94ea84800fc91cd
   languageName: node
   linkType: hard
 
@@ -9400,6 +9497,7 @@ __metadata:
     ethers: ^5.7.2
     framer-motion: ^7.6.2
     keen-slider: ^6.8.3
+    moralis: ^2.7.2
     next: 12.3.1
     react: 18.2.0
     react-app-polyfill: ^3.0.0
@@ -13752,6 +13850,23 @@ __metadata:
   languageName: node
   linkType: hard
 
+"moralis@npm:^2.7.2":
+  version: 2.7.2
+  resolution: "moralis@npm:2.7.2"
+  dependencies:
+    "@moralisweb3/api-utils": ^2.7.2
+    "@moralisweb3/auth": ^2.7.2
+    "@moralisweb3/core": ^2.7.2
+    "@moralisweb3/evm-api": ^2.7.2
+    "@moralisweb3/evm-utils": ^2.7.2
+    "@moralisweb3/sol-api": ^2.7.2
+    "@moralisweb3/sol-utils": ^2.7.2
+    "@moralisweb3/streams": ^2.7.2
+    "@moralisweb3/streams-typings": ^1.0.5
+  checksum: c8b50ab1a60a1b740dd8f30a81432cecbf40a1bf388be244d7210b1067be3df06cc2064c229660c855e7783e4a939dcffecabb301387f32e5062f13d4d6a9a5f
+  languageName: node
+  linkType: hard
+
 "ms@npm:2.0.0":
   version: 2.0.0
   resolution: "ms@npm:2.0.0"
@@ -16618,21 +16733,21 @@ __metadata:
   languageName: node
   linkType: hard
 
+"rxjs@npm:*, rxjs@npm:^7.1.0, rxjs@npm:^7.5.5":
+  version: 7.5.7
+  resolution: "rxjs@npm:7.5.7"
+  dependencies:
+    tslib: ^2.1.0
+  checksum: edabcdb73b0f7e0f5f6e05c2077aff8c52222ac939069729704357d6406438acca831c24210db320aba269e86dbe1a400f3769c89101791885121a342fb15d9c
+  languageName: node
+  linkType: hard
+
 "rxjs@npm:^6.6.3":
   version: 6.6.7
   resolution: "rxjs@npm:6.6.7"
   dependencies:
     tslib: ^1.9.0
   checksum: bc334edef1bb8bbf56590b0b25734ba0deaf8825b703256a93714308ea36dff8a11d25533671adf8e104e5e8f256aa6fdfe39b2e248cdbd7a5f90c260acbbd1b
-  languageName: node
-  linkType: hard
-
-"rxjs@npm:^7.1.0, rxjs@npm:^7.5.5":
-  version: 7.5.7
-  resolution: "rxjs@npm:7.5.7"
-  dependencies:
-    tslib: ^2.1.0
-  checksum: edabcdb73b0f7e0f5f6e05c2077aff8c52222ac939069729704357d6406438acca831c24210db320aba269e86dbe1a400f3769c89101791885121a342fb15d9c
   languageName: node
   linkType: hard
 
@@ -18104,6 +18219,18 @@ __metadata:
   languageName: node
   linkType: hard
 
+"typed-emitter@npm:^2.1.0":
+  version: 2.1.0
+  resolution: "typed-emitter@npm:2.1.0"
+  dependencies:
+    rxjs: "*"
+  dependenciesMeta:
+    rxjs:
+      optional: true
+  checksum: 95821a9e05784b972cc9d152891fd12a56cb4b1a7c57e768c02bea6a8984da7aff8f19404a7b69eea11fae2a3b6c0c510a4c510f575f50162c759ae9059f2520
+  languageName: node
+  linkType: hard
+
 "typedarray-to-buffer@npm:3.1.5, typedarray-to-buffer@npm:^3.1.5":
   version: 3.1.5
   resolution: "typedarray-to-buffer@npm:3.1.5"
@@ -18698,6 +18825,16 @@ __metadata:
     web3-core-requestmanager: 1.8.1
     web3-utils: 1.8.1
   checksum: 8c54ff774bf18dc04c80d2e4e82368700d1c1a74cc93208c2be9985d859de02f491106ab097b2e894222caeaa59ef909ee05e1df080dc5ab460e74aafc88fc51
+  languageName: node
+  linkType: hard
+
+"web3-eth-abi@npm:^1.8.0":
+  version: 1.8.1
+  resolution: "web3-eth-abi@npm:1.8.1"
+  dependencies:
+    "@ethersproject/abi": ^5.6.3
+    web3-utils: 1.8.1
+  checksum: b92ada32e05415fe30fe0f42bf4b691ead70c868b31e003768aa7be22a0cbac9443147bb763183f9728c6b0ce6d7f0e01aec595fd2c51a26d9a77b0ab139068e
   languageName: node
   linkType: hard
 
