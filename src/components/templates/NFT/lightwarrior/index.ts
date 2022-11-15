@@ -1,0 +1,1 @@
+export { default as Lightwarrior } from './Lightwarrior';
