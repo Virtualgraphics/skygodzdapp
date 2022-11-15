@@ -36,6 +36,12 @@ const NAV_LINKS: ISubNav[] = [
     
   },
 
+  {
+    label: 'TOKEN',
+    href: '/token',
+    
+  },
+
 
   {
     label: 'COMMUNITY',
