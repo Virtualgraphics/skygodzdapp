@@ -48,7 +48,7 @@ function gridListWithCTA() {
 
             <NextLink href='/stargateportal' legacyBehavior passHref>
   <Link>
-    <Button>Launch Stargate Game</Button>
+    <Button colorScheme='blue' size='lg'>Launch Stargate Game</Button>
   </Link>
 </NextLink>  
 

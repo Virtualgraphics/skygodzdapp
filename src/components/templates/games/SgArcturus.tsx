@@ -40,8 +40,8 @@ const SgArcturus= () => {
           </Stack>
         </Stack>
         <Stack spacing="6" align="center">
-          <Text fontSize="xl" color="muted" >
-            Available Mints
+          <Text fontSize="sm" color="muted" >
+          Only 1 Stargate per wallet.
           </Text>
           
           <Stack spacing="4">
@@ -59,10 +59,10 @@ const SgArcturus= () => {
           </Stack>
         </Stack>
         <Stack spacing="0.5" align="center">
-          <Text fontSize="md" color="muted">
-          Only 1 Stargate per wallet.
-          </Text>
           
+          <Button colorScheme='blue' size='lg'>
+    Power up Stargate
+  </Button>
         </Stack>
         
       </Stack>
