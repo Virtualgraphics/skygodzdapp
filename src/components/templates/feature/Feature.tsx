@@ -8,9 +8,11 @@ import {
   Grid,
   GridItem,
   Container,
+  Link
 
 } from '@chakra-ui/react';
 import {} from '@chakra-ui/react';
+import NextLink from 'next/link'
 
 interface FeatureProps {
   heading: string;
@@ -43,9 +45,14 @@ function gridListWithCTA() {
             <chakra.h2 fontSize="3xl" fontWeight="700" color="blue.400">
                Choose your planet, connect your NFT and launch the Game...
             </chakra.h2>
-            <Button colorScheme="blue" size="md">
-              Launch Game
-            </Button>
+
+            <NextLink href='/stargateportal' legacyBehavior passHref>
+  <Link>
+    <Button>Launch Stargate Game</Button>
+  </Link>
+</NextLink>  
+
+
           </VStack>
         </GridItem>
         <GridItem>
