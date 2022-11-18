@@ -45,7 +45,7 @@ const Step = (props: StepProps) => {
         <Text color="emphasized" fontWeight="medium">
           {title}
         </Text>
-        <Text color="muted">{description}</Text>
+        <Text color="muted" align='center'>{description} </Text>
       </Stack>
     </Stack>
   )

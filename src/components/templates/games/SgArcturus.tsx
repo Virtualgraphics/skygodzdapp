@@ -6,7 +6,7 @@ import { BigNumber } from "ethers";
 import { useState } from "react";
 
 const SgArcturus= () => {
-  const { contract: EditionDrop } = useContract("0x3502DAfcE1FE3f23b604280D171a654319139ed7",  "edition-drop");
+  const { contract: EditionDrop } = useContract("0xC6d1CddCD97AFF8997fc5130E7Ab28173fe6FcDE",  "edition-drop");
     const tokenId = 0;
     const [quantity, setQuantity] = useState<number>(1); // default to 1
   
@@ -28,33 +28,33 @@ const SgArcturus= () => {
       <Flex justify='center' pb='7'>
       
       <Text as='b' fontSize="xl" color="muted">
-  ARCTURUS STARGATE
+  ARCTURIAN
   </Text></Flex>
 
       <Stack spacing="6">
         <Stack spacing="4" align="center">
          
           <Stack spacing="0" textAlign="center" >
-            <Image boxSize='200' borderRadius="20" src="https://www.virtual-graphics.ch/wp-content/uploads/2022/11/arcturus_stargate.jpg" alt="Arcturus Stargate"/>
+            <Image boxSize='200' borderRadius="20" src="https://www.virtual-graphics.ch/wp-content/uploads/2022/11/mint_arcturian.jpg" alt="Arcturian"/>
            
           </Stack>
         </Stack>
         <Stack spacing="6" align="center">
           <Text fontSize="sm" color="muted" >
-          Only 1 Stargate per wallet.
+          Only 1 Arcturian per wallet.
           </Text>
           
           <Stack spacing="4">
             
           <Web3Button accentColor='lightblue'
-          contractAddress={"0x3502DAfcE1FE3f23b604280D171a654319139ed7"}
+          contractAddress={"0xC6d1CddCD97AFF8997fc5130E7Ab28173fe6FcDE"}
           action={async (contract) =>
             await contract.erc1155.claim(tokenId, quantity)
           }
           onSuccess={(claimed) => alert("Claimed!")}
           onError={(error) => alert(error.message)}
         >
-          Claim Stargate
+          Claim Arcturian
         </Web3Button>
           </Stack>
         </Stack>

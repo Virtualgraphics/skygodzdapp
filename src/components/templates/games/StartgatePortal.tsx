@@ -23,13 +23,13 @@ return (
                     fontWeight="extrabold"
                     letterSpacing="tight"
                   >
-                   STARGATE PORTAL
+                   STARGATE PORTAL GAME
                   </Heading>
                   </Flex>
 
                   <Flex w="100%"   align ='center' justify="center" pt='10'>
                   <Text textColor= 'blue.100, blue.800' fontSize='2xl'>
-Choose a Stargate below to get to your Homeworld.
+Bring your Alien to the Homeworld through a Stargate
 
                   </Text>
 
@@ -57,9 +57,9 @@ Choose a Stargate below to get to your Homeworld.
                   </Heading>
                   </Flex>
 
-<Flex w="70%"  m='auto'  justify="center" pt='5' pb='10'> 
+<Flex w="60%"  m='auto'  justify="center" pt='5' pb='10'> 
                   <Text align="center"  textColor= 'blue.100, blue.800' fontSize='lg'>
-After claiming your Startgate, you need to power up your Stargate with Cosmic Energy. Click the Button to purchase various energy sources with the LOTUS tokens. You can then power up your Stargate and earn more tokens.
+Claim an Alien of your choice and click the play button to power up your Stargate with Cosmic Energy and earn LOTUS tokens.
 Please check the list below for all the steps and make sure you hold an Stargazer NFT that corresponds with your Stargate, an Arcturian can only access the Acturus Stargate. Also make sure you have enough LOTUS in your wallet. You can alway claim more here.
 
                   </Text></Flex>

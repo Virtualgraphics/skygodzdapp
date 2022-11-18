@@ -6,7 +6,7 @@ import { BigNumber } from "ethers";
 import { useState } from "react";
 
 const SgSirius= () => {
-  const { contract: EditionDrop } = useContract("0xe3C2E942c8328Bc9843Aac350E61Ac26A3d73815",  "edition-drop");
+  const { contract: EditionDrop } = useContract("0x41294695095beEDe56cE9BdCC504FC4952e39F18",  "edition-drop");
     const tokenId = 0;
     const [quantity, setQuantity] = useState<number>(1); // default to 1
   
@@ -28,33 +28,33 @@ const SgSirius= () => {
       <Flex justify='center' pb='7'>
       
       <Text as='b' fontSize="xl" color="muted">
-  SIRIUS STARGATE
+  SIRIUS BEING
   </Text></Flex>
 
       <Stack spacing="6">
         <Stack spacing="4" align="center">
          
           <Stack spacing="0" textAlign="center" >
-            <Image boxSize='200' borderRadius="20" src="https://www.virtual-graphics.ch/wp-content/uploads/2022/11/sirius_targates.jpg" alt="Sirius Stargate"/>
+            <Image boxSize='200' borderRadius="20" src="https://www.virtual-graphics.ch/wp-content/uploads/2022/11/mint_sirian.jpg" alt="Sirian"/>
            
           </Stack>
         </Stack>
         <Stack spacing="6" align="center">
           <Text fontSize="sm" color="muted" >
-          Only 1 Stargate per wallet.
+          Only 1 Sirian per wallet.
           </Text>
           
           <Stack spacing="4">
             
           <Web3Button accentColor='lightblue'
-          contractAddress={"0xe3C2E942c8328Bc9843Aac350E61Ac26A3d73815"}
+          contractAddress={"0x41294695095beEDe56cE9BdCC504FC4952e39F18"}
           action={async (contract) =>
             await contract.erc1155.claim(tokenId, quantity)
           }
           onSuccess={(claimed) => alert("Claimed!")}
           onError={(error) => alert(error.message)}
         >
-          Claim Stargate
+          Claim Sirius Being
         </Web3Button>
           </Stack>
         </Stack>

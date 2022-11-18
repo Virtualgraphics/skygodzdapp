@@ -1,7 +1,7 @@
 export const steps = [
     {
       title: 'Step 1',
-      description: 'Claim an NFT from the STARGAZER Collection',
+      description: 'Claim an Alien NFT from the STARGAZER Collection',
     },
     {
       title: 'Step 2',
@@ -9,7 +9,7 @@ export const steps = [
     },
     {
       title: 'Step 3',
-      description: 'Claim a Stargate that matches your alien being',
+      description: 'Press PLAY to get to the Stargate Portal',
     },
     {
       title: 'Step 4',
