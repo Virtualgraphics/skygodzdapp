@@ -33,7 +33,8 @@ const Games = () => {
 
         align="center" justify="center" mt="10" mb="20">
 
-        <Image src='https://www.virtual-graphics.ch/wp-content/uploads/2022/11/game_cover.png'  alt= "Game Cover"/>
+        <Image src='https://www.virtual-graphics.ch/wp-content/uploads/2022/11/game_cover.png' 
+    objectFit='cover'alt= "Game Cover"/>
 
         </Flex>
 

@@ -1,9 +1,10 @@
-import { Box, Button, Flex, Container,Divider, Heading, Input, Stack, Text, Image, useBreakpointValue, useColorModeValue as mode } from '@chakra-ui/react';
+import { Box, Button, Flex,Link, Container,Divider, Heading, Input, Stack, Text, Image, useBreakpointValue, useColorModeValue as mode } from '@chakra-ui/react';
 import { FC, useEffect } from 'react';
 import {MediaRenderer, useContract, useContractMetadata, Web3Button} from "@thirdweb-dev/react";
 import { EditionDrop, Erc1155 } from '@thirdweb-dev/sdk';
 import { BigNumber } from "ethers";
 import { useState } from "react";
+import NextLink from 'next/link'
 
 const SgArcturus= () => {
   const { contract: EditionDrop } = useContract("0xC6d1CddCD97AFF8997fc5130E7Ab28173fe6FcDE",  "edition-drop");
@@ -59,10 +60,13 @@ const SgArcturus= () => {
           </Stack>
         </Stack>
         <Stack spacing="0.5" align="center">
-          
-          <Button colorScheme='blue' size='lg'>
-    Power up Stargate
-  </Button>
+      
+      
+        <NextLink href='/playarcturus' legacyBehavior passHref>
+  <Link>
+    <Button colorScheme='blue' size='lg'>Power up Stargate</Button>
+  </Link>
+</NextLink>  
         </Stack>
         
       </Stack>
