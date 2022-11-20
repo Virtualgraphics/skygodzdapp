@@ -20,7 +20,7 @@ import {
    * - Pickaxes the connected wallet has
    * - A stake button underneath each of them to equip it
    */
-  export default function OwnedGear({ pickaxeContract, miningContract }: Props) {
+  function OwnedEnergy({ pickaxeContract, miningContract }: Props) {
     const address = useAddress();
     const { data: ownedPickaxes, isLoading } = useOwnedNFTs(
       pickaxeContract,
@@ -78,4 +78,5 @@ import {
       );
     }
   
+export default OwnedEnergy;
   

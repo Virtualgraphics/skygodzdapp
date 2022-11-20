@@ -3,7 +3,7 @@ import { Box, Button, Flex, Container,Divider, Heading, Input, Stack, Text, Imag
 import { ThirdwebNftMedia, useAddress, useNFT } from "@thirdweb-dev/react";
 import { EditionDrop, NFT, SmartContract } from "@thirdweb-dev/sdk";
 import React, { useEffect, useState } from "react";
-import ContractMappingResponse from "types/ContractMappingResponse";
+import ContractMappingResponse from "../types/ContractMappingResponse";
 
 
 
@@ -18,7 +18,7 @@ type Props = {
  * - Currently equipped miner character (right now there is just one (token ID 0))
  * - Currently equipped character's pickaxe
  */
-export default function CurrentGear({
+function CurrentEnergy({
   miningContract,
   characterContract,
   pickaxeContract,
@@ -90,3 +90,5 @@ export default function CurrentGear({
     </div>
   );
 }
+
+export default CurrentEnergy;

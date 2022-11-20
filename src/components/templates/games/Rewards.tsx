@@ -22,7 +22,7 @@ type Props = {
  * - The amount this wallet holds of this wallet
  * - The amount this user can claim from the mining contract
  */
-export default function Rewards({ miningContract, tokenContract }: Props) {
+function Rewards({ miningContract, tokenContract }: Props) {
   const address = useAddress();
 
   const { data: tokenMetadata } = useMetadata(tokenContract);
@@ -68,3 +68,5 @@ export default function Rewards({ miningContract, tokenContract }: Props) {
     </div>
   );
 }
+
+export default Rewards;

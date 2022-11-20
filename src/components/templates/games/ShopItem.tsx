@@ -15,7 +15,7 @@ import {
     item: NFT;
   };
   
-  export default function ShopItem({ item, pickaxeContract }: Props) {
+  function ShopItem({ item, pickaxeContract }: Props) {
     const { data: claimCondition } = useActiveClaimCondition(
       pickaxeContract,
       item.metadata.id
@@ -51,3 +51,5 @@ import {
       </div>
     );
   }
+
+  export default ShopItem;
