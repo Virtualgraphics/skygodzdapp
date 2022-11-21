@@ -1,4 +1,4 @@
-import { Box, Button, Flex, Container,Divider, Spinner, Heading, Input, Stack, Text, Image, useBreakpointValue, useColorModeValue as mode } from '@chakra-ui/react';
+import { Box, Button, Flex, Container,Divider, Spacer, Spinner, Heading, Input, Stack, Text, Image, useBreakpointValue, useColorModeValue as mode } from '@chakra-ui/react';
 import { Default } from 'components/layouts/Default';
 import {
     ConnectWallet,
@@ -33,17 +33,17 @@ function PlayArcturus() {
   
     return (
 
-        <Box w="100%" > <Flex align="center" justify="center">
+        <Container maxW='80%' m="auto">
       <Heading as="h1"size="md"color={mode('blue.600', 'blue.300')}mt="8"fontWeight="extrabold" letterSpacing="tight">
                    Power up the Arcturus Stargate</Heading>
-                  </Flex>
+                  
 
-      <Flex ml='50'>
+      <Box m='auto'>
         {miningContract &&
         characterContract &&
         tokenContract &&
         pickaxeContract ? (
-          <Flex >
+          <Box >
             <CurrentEnergy
               miningContract={miningContract}
               characterContract={characterContract}
@@ -53,23 +53,25 @@ function PlayArcturus() {
               miningContract={miningContract}
               tokenContract={tokenContract}
             />
-          </Flex>
+          </Box>
         ) : (
-          <Spinner m='auto'/>
+          <Spinner alignItems='center center'/>
         )}
   
         <Divider orientation='horizontal' /> 
   
         {pickaxeContract && miningContract ? (
           <>
-            <h2 >
+          <Flex align="center" justify="center">
+            <Heading pt='10' pb='10' as="h1"size="md"color={mode('blue.600', 'blue.300')}mt="8"fontWeight="bold">
               Energy Sources you own
-            </h2>
-            <Flex w="100%" minHeight="10rem" flexDirection="row" justify="center" alignItems="center" mt='10' >
+            </Heading>
+            <Flex w="100%" minHeight="10rem" flexDirection="row"  alignItems="center" mt='10' >
               <OwnedEnergy
                 pickaxeContract={pickaxeContract}
                 miningContract={miningContract}
               />
+            </Flex>
             </Flex>
           </>
         ) : (
@@ -78,20 +80,19 @@ function PlayArcturus() {
   
   <Divider orientation='horizontal' />
   
-        {pickaxeContract && tokenContract ? (
-          <>
-            <h2 >Shop</h2>
-            <div
-            >
-              <Shop pickaxeContract={pickaxeContract} />
-            </div>
-          </>
-        ) : (
-            <Spinner m='auto'/>
-        )}
-      </Flex>
+  <Flex align="center" justify="center" >
+            <Heading pt='10' pb='10' as="h1"size="md"color={mode('blue.600', 'blue.300')}mt="8"fontWeight="bold" >Shop</Heading>
+            </Flex>
+            <Flex m="auto" >
+            
 
+              <Shop pickaxeContract={pickaxeContract} />
+            </Flex>
+          
+        
       </Box>
+
+      </Container>
     );
   }
 

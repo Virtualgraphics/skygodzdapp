@@ -15,7 +15,7 @@ function Shop ({ pickaxeContract }: Props) {
 
   return (
     <>
-      <div>
+      <Flex maxW='100%' direction="row" gap='14'>
         {availablePickaxes?.map((p) => (
           <ShopItem
             pickaxeContract={pickaxeContract}
@@ -23,7 +23,7 @@ function Shop ({ pickaxeContract }: Props) {
             key={p.metadata.id.toString()}
           />
         ))}
-      </div>
+      </Flex>
     </>
   );
 }
