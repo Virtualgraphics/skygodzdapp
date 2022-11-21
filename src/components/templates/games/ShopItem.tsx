@@ -22,24 +22,41 @@ import {
     );
   
     return (
-      <div >
-        <ThirdwebNftMedia
+
+<Container
+      maxW="xs"
+      mb="0"
+    
+      py={{ base: '4', sm: '8' }}
+      px={{ base: '4', sm: '10' }}
+      bg={useBreakpointValue({ base: 'transparent', sm: 'bg-surface' })}
+      boxShadow={{ base: 'none', sm: 'xl' }}
+      borderRadius={{ base: 'none', sm: '2xl' }}
+    >
+
+      <Stack spacing="6">
+        <Stack spacing="4" align="center" borderRadius={20}>
+     
+        <ThirdwebNftMedia 
           metadata={item.metadata}
       
           height={"64"}
-        />
-        <h3>{item.metadata.name}</h3>
-        <p>
+          />
+        </Stack>
+        
+        <Text align="center"  >{item.metadata.name}</Text>
+        <Text align="center" fontSize="sm" color="muted">
           Price:{" "}
           <b>
             {claimCondition && ethers.utils.formatUnits(claimCondition?.price)}{" "}
-            GEM
+           LOTUS
           </b>
-        </p>
+          </Text>
   
-        <div >
+        <Box p='5'>
           <Web3Button
             colorMode="dark"
+            
             contractAddress={ "0x00573597b00EEAE131Cc98766159EDb8Da2F2250"}
             action={(contract) => contract.erc1155.claim(item.metadata.id, 1)}
             onSuccess={() => alert("Purchased!")}
@@ -47,8 +64,10 @@ import {
           >
             Buy
           </Web3Button>
-        </div>
-      </div>
+        </Box>
+        </Stack>
+ </Container>
+
     );
   }
 

@@ -51,32 +51,34 @@ import {
     }
   
     return (
-        <>
-          <div >
-            {ownedPickaxes?.map((p) => (
-              <div  key={p.metadata.id.toString()}>
-                <ThirdwebNftMedia
-                  metadata={p.metadata}
-                  
-                  height={"64"}
-                />
-                <h3>{p.metadata.name}</h3>
-    
-                <div >
-                  <Web3Button
-                    colorMode="dark"
-                    contractAddress={"0xCa240A807df08AB8E9a340Fb6ce608Faa8DC2e49"}
-                    action={() => equip(p.metadata.id)}
-                  >
-                    Equip
-                  </Web3Button>
-                </div>
-              </div>
-            ))}
-          </div>
-        </>
-      );
-    }
+      <>
+
+      
+        <Flex maxHeight={200}>
+          {ownedPickaxes?.map((p) => (
+            <Flex  key={p.metadata.id.toString()}>
+              <ThirdwebNftMedia
+                metadata={p.metadata}
+                
+                height={"40"}
+              />
+              <Text align="center" fontSize="lg" color="muted">{p.metadata.name}</Text>
+  
+              <Flex p='5'>
+                <Web3Button
+                  colorMode="dark"
+                  contractAddress={"0xCa240A807df08AB8E9a340Fb6ce608Faa8DC2e49"}
+                  action={() => equip(p.metadata.id)}
+                >
+                  Power Up
+                </Web3Button>
+              </Flex>
+            </Flex>
+          ))}
+        </Flex>
+      </>
+    );
+  }
   
 export default OwnedEnergy;
   
